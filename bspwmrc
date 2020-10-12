@@ -98,7 +98,7 @@ dunst \
 -history_key F8 &
 
 # Lauch keybindings daemon
-sxhkd &
+sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 
 # Enable Super Keys For Menu
 ksuperkey -e 'Super_L=Alt_L|F1' &
