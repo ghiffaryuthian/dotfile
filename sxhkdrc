@@ -74,6 +74,10 @@ ctrl + alt + {q,r}
 super + c
 	bspc node -c
 
+# Close App
+alt + F4
+	bspc node -c
+
 # kill
 ctrl + alt + Escape
     xkill
