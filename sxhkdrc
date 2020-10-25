@@ -153,6 +153,15 @@ alt + shift + {Left,Down,Up,Right}
 
 # Hide/Unhide Window
 super + shift + i
-	winmask		
+	winmask
 
+# Rotate current parent
+super + shift + r
+	bspc node -f @parent; \
+	bspc node -R 90; \
+	bspc node -f @1
+
+# Move current window to a pre-selected space
+super + shift + m
+    bspc node -n last.!automatic
 ##---------- EOF ----------##
