@@ -111,7 +111,7 @@ xfce4-power-manager &
 # xsetroot -cursor_name left_ptr
 
 # Restore wallpaper
-bash $HOME/.fehbg
+feh --no-fehbg --bg-fill "$HOME/.config/bspwm/wallpapers/__takagaki_kaede_idolmaster_and_1_more_drawn_by_gawain_artist__76ede3145fe8ffbd45acdf6b7560e1fe.jpg"
 
 # Numlock
 numlockx &
