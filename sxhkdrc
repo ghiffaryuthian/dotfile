@@ -35,7 +35,7 @@ super + shift + {f,w,e}
 
 # Take a screenshot
 Print
-	scrot 'Screenshot_%Y-%m-%d-%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; viewnior $$(xdg-user-dir PICTURES)/$f'
+	flameshot gui
 	
 # Take a screenshot in 5 second
 alt + Print	
