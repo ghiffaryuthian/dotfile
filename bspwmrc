@@ -58,16 +58,16 @@ bspc rule -r *:*
 # bspc rule -a Pcmanfm desktop='^3' follow=on focus=on
 
 # 4 > office
-declare -a office=(Geany Gucharmap Evince \
-libreoffice-writer libreoffice-calc libreoffice-impress \
-libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
-for i in ${office[@]}; do
-   bspc rule -a $i desktop='^4' follow=on focus=on; done
+# declare -a office=(Geany Gucharmap Evince \
+# libreoffice-writer libreoffice-calc libreoffice-impress \
+# libreoffice-startcenter libreoffice Soffice *:libreofficedev *:soffice)
+# for i in ${office[@]}; do
+#    bspc rule -a $i desktop='^4' follow=on focus=on; done
 
 # 5 > media
-declare -a media=(Spotify Audacity mpv mplayer lxmusic Gimp Gimp-2.8)
-for i in ${media[@]}; do
-   bspc rule -a $i desktop='^5' follow=on focus=on; done
+# declare -a media=(Spotify Audacity mpv mplayer lxmusic Gimp Gimp-2.8)
+# for i in ${media[@]}; do
+#    bspc rule -a $i desktop='^5' follow=on focus=on; done
 
 
 # special rules
@@ -83,7 +83,7 @@ bspc rule -a stalonetray state=floating manage=off
 ## Autostart -------------------------------#
 
 # Kill if already running
-killall -9 sxhkd xsettingsd dunst xfce4-power-manager
+killall -9 sxhkd xsettingsd dunst xfce4-power-manager xss-lock
 
 # Lauch notification daemon
 dunst \
@@ -106,6 +106,9 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 
 # Enable power management
 xfce4-power-manager &
+
+# Enable auto lock
+xss-lock -- betterlockscreen --lock &
 
 # Fix cursor
 # xsetroot -cursor_name left_ptr
