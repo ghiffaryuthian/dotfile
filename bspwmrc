@@ -107,6 +107,9 @@ ksuperkey -e 'Super_R=Alt_L|F1' &
 # Enable power management
 xfce4-power-manager &
 
+# Start Caffeine
+caffeine &
+
 # Enable auto lock
 xss-lock -- betterlockscreen --lock &
 
