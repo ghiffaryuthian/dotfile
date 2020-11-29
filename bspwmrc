@@ -94,8 +94,7 @@ dunst \
 -shrink true -show_age_threshold 30s \
 -mouse_left_click do_action \
 -mouse_middle_click close_all \
--mouse_right_click close_current \
--history_key F8 &
+-mouse_right_click close_current &
 
 # Lauch keybindings daemon
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
